@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Elderly Care Dashboard Design System - Warm, accessible colors */
+
+@layer base {
+  :root {
+    /* Background and base colors */
+    --background: 15 100% 97%;
+    --foreground: 225 15% 20%;
+
+    /* Card colors */
+    --card: 0 0% 100%;
+    --card-foreground: 225 15% 20%;
+
+    /* Popover colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 225 15% 20%;
+
+    /* Primary coral/salmon theme */
+    --primary: 15 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 15 75% 85%;
+    --primary-glow: 15 90% 75%;
+
+    /* Secondary blue accents */
+    --secondary: 210 60% 92%;
+    --secondary-foreground: 225 15% 20%;
+    --secondary-blue: 210 85% 65%;
+    --secondary-blue-soft: 210 75% 85%;
+
+    /* Success green for health indicators */
+    --success: 140 65% 55%;
+    --success-soft: 140 50% 85%;
+
+    /* Warning amber for alerts */
+    --warning: 35 85% 65%;
+    --warning-soft: 35 75% 85%;
+
+    /* Muted colors for subtle elements */
+    --muted: 15 15% 95%;
+    --muted-foreground: 225 10% 55%;
+
+    /* Accent colors */
+    --accent: 15 50% 95%;
+    --accent-foreground: 225 15% 20%;
+
+    /* Destructive colors */
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border and input colors */
+    --border: 15 25% 90%;
+    --input: 15 25% 90%;
+    --ring: 15 85% 65%;
+
+    /* Border radius */
+    --radius: 0.75rem;
+
+    /* Gradients for visual appeal */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-soft: linear-gradient(135deg, hsl(var(--primary-soft)), hsl(var(--secondary-blue-soft)));
+    --gradient-background: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Shadows for depth */
+    --shadow-soft: 0 4px 20px -4px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 2px 10px -2px hsl(var(--foreground) / 0.1);
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.3);
+
+    /* Typography scale for accessibility */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode with warm tones for evening comfort */
+    --background: 225 20% 8%;
+    --foreground: 15 15% 95%;
+
+    --card: 225 15% 12%;
+    --card-foreground: 15 15% 95%;
+
+    --popover: 225 15% 12%;
+    --popover-foreground: 15 15% 95%;
+
+    --primary: 15 75% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 15 50% 25%;
+    --primary-glow: 15 70% 50%;
+
+    --secondary: 210 25% 20%;
+    --secondary-foreground: 15 15% 95%;
+    --secondary-blue: 210 60% 55%;
+    --secondary-blue-soft: 210 40% 25%;
+
+    --success: 140 45% 45%;
+    --success-soft: 140 30% 25%;
+
+    --warning: 35 70% 55%;
+    --warning-soft: 35 50% 25%;
+
+    --muted: 225 15% 15%;
+    --muted-foreground: 15 10% 65%;
+
+    --accent: 225 15% 15%;
+    --accent-foreground: 15 15% 95%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 225 15% 20%;
+    --input: 225 15% 20%;
+    --ring: 15 75% 60%;
+
+    --sidebar-background: 225 20% 8%;
+    --sidebar-foreground: 15 15% 95%;
+    --sidebar-primary: 15 75% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 225 15% 15%;
+    --sidebar-accent-foreground: 15 15% 95%;
+    --sidebar-border: 225 15% 20%;
+    --sidebar-ring: 15 75% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
